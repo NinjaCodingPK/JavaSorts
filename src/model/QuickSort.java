@@ -7,6 +7,7 @@ package model;
 public class QuickSort implements Sorter {
     private double[] array;
 
+    @Override
     public void sort() {
         doSort(0, array.length-1);
     }
@@ -74,10 +75,12 @@ public class QuickSort implements Sorter {
         return firstIndex + (int)(Math.random() * (lastIndex - firstIndex));
     }
 
+    @Override
     public double[] getArray() {
         return array;
     }
 
+    @Override
     public void setArray(double[] array) {
         this.array = array;
     }
