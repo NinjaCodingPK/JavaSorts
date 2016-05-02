@@ -44,18 +44,27 @@ public class MergeSort implements Sorter {
 
         while((firstIndex < mid) && (secondIndex < end)) {
             if(array[firstIndex] < array[secondIndex]) {
-                resultArray[resultIndex++] = array[firstIndex++];
-            }else{
-                resultArray[resultIndex++] = array[secondIndex++];
+                resultArray[resultIndex] = array[firstIndex];
+                resultIndex++;
+                firstIndex++;
+            } else {
+                resultArray[resultIndex] = array[secondIndex];
+                resultIndex++;
+                secondIndex++;
             }
         }
-        while(firstIndex < mid ){
-            resultArray[resultIndex++] = array[firstIndex++];
+        while(firstIndex < mid ) {
+            resultArray[resultIndex] = array[firstIndex];
+            resultIndex++;
+            firstIndex++;
         }
-        while(secondIndex < end ){
-            resultArray[resultIndex++] = array[secondIndex++];
+        while(secondIndex < end ) {
+            resultArray[resultIndex] = array[secondIndex];
+            resultIndex++;
+            secondIndex++;
         }
-        System.arraycopy(resultArray , 0 , array , start , resultIndex );
+
+        System.arraycopy(resultArray, 0, array, start, resultIndex);
     }
 
     @Override
