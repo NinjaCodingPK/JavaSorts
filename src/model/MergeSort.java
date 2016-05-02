@@ -30,7 +30,7 @@ public class MergeSort implements Sorter {
     }
 
     /**
-     * merge two part of one array.
+     * merge two parts of one array.
      * @param array to merge.
      * @param start start of first part of array.
      * @param mid middle part of the whole array. End of first part and start of second part.
