@@ -10,7 +10,7 @@ public class MergeSort implements Sorter {
     @Override
     public void sort(){
         double temp[] = new double[array.length];
-        mergeSort(this.array , 0 , array.length , temp);
+        doSort(this.array , 0 , array.length , temp);
     }
 
     /**
@@ -20,11 +20,11 @@ public class MergeSort implements Sorter {
      * @param end end index.
      * @param temp temporary buffer.
      */
-    private void mergeSort(double array[], int start, int end, double temp[]){
+    private void doSort(double array[], int start, int end, double temp[]){
         if(start < end - 1) {
             int mid = start + (end - start) / 2;
-            mergeSort(array, start, mid, temp);
-            mergeSort(array, mid, end, temp);
+            doSort(array, start, mid, temp);
+            doSort(array, mid, end, temp);
             merge(array, start, mid, end, temp);
         }
     }
