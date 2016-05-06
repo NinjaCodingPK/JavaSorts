@@ -1,6 +1,7 @@
 package model;
 
 /**
+ * Java Insertion sort realization.
  * Created by wookie on 5/6/16.
  */
 public class InsertionSort implements Sorter {
@@ -11,6 +12,9 @@ public class InsertionSort implements Sorter {
         doSort();
     }
 
+    /**
+     * Insertion sort algorithm.
+     */
     private void doSort() {
         int j;
         double temp;
