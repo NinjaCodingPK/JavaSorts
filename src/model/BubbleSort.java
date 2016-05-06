@@ -1,7 +1,8 @@
 package model;
 
 /**
- * Java bubble sort realization.
+ * Java bubble sort realization. Toughness: O(n*n).
+ * Stable sort algorithm. One of the slowest algorithms. Works good only for small arrays.
  * Created by wookie on 5/5/16.
  */
 public class BubbleSort implements Sorter {

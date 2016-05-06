@@ -1,7 +1,9 @@
 package model;
 
 /**
- * Java Merge sort realization.
+ * Java Merge sort realization. Toughness: O(n*log(n)). Require O(n) of additional memory.
+ * Stable sort algorithm. Combines well with parallel programming.
+ * Algorithm works some for already sorted arrays and non-sorted arrays.
  * Created by wookie on 5/2/16.
  */
 public class MergeSort implements Sorter {

@@ -1,7 +1,9 @@
 package model;
 
 /**
- * Java Selection sort realization.
+ * Java Selection sort realization. Toughness: O(n*n).
+ * Non-stable sort algorithm. Works good in big arrays with small keys.
+ * Toughness of algorithm don't depends on state of array.
  * Created by wookie on 5/6/16.
  */
 public class SelectionSort implements Sorter {
@@ -28,7 +30,7 @@ public class SelectionSort implements Sorter {
     }
 
     /**
-     * find position of min element in array.
+     * Find position of min element in array.
      * Min element is searched from startPos to the end of array.
      * @param startPos start position of searching.
      * @return position of min element.

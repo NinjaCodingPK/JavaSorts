@@ -1,7 +1,9 @@
 package model;
 
 /**
- * Java Quick sort realization.
+ * Java Quick sort realization. Toughness: O(n*log(n)).
+ * Non-stable sort algorithm. The best algorithm for big non-sorted arrays.
+ * If array is revers-sorted toughness of algorithm become equal O(n*n).
  * Created by wookie on 5/2/16.
  */
 public class QuickSort implements Sorter {
