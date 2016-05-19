@@ -6,7 +6,6 @@ package model;
  * Created by wookie on 5/5/16.
  */
 public class BubbleSort extends Sorter {
-    private double[] array;
 
     @Override
     public void sort() {
@@ -35,15 +34,5 @@ public class BubbleSort extends Sorter {
         double temp = array[index1];
         array[index1] = array[index2];
         array[index2] = temp;
-    }
-
-    @Override
-    public double[] getArray() {
-        return array;
-    }
-
-    @Override
-    public void setArray(double[] array) {
-        this.array = array;
     }
 }

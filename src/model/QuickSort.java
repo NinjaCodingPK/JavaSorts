@@ -7,7 +7,6 @@ package model;
  * Created by wookie on 5/2/16.
  */
 public class QuickSort extends Sorter {
-    private double[] array;
 
     @Override
     public void sort() {
@@ -75,15 +74,5 @@ public class QuickSort extends Sorter {
      */
     public int randomSelection(int firstIndex, int lastIndex) {
         return firstIndex + (int)(Math.random() * (lastIndex - firstIndex));
-    }
-
-    @Override
-    public double[] getArray() {
-        return array;
-    }
-
-    @Override
-    public void setArray(double[] array) {
-        this.array = array;
     }
 }

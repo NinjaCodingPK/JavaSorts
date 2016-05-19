@@ -6,7 +6,6 @@ package model;
  * Created by wookie on 5/6/16.
  */
 public class InsertionSort extends Sorter {
-    private double[] array;
 
     @Override
     public void sort() {
@@ -32,15 +31,5 @@ public class InsertionSort extends Sorter {
             }
             array[j + 1] = temp;
         }
-    }
-
-    @Override
-    public double[] getArray() {
-        return array;
-    }
-
-    @Override
-    public void setArray(double[] array) {
-        this.array = array;
     }
 }

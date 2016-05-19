@@ -7,7 +7,6 @@ package model;
  * Created by wookie on 5/10/16.
  */
 public class ShellSort extends Sorter {
-    private double[] array;
 
     @Override
     public void sort() {
@@ -39,15 +38,5 @@ public class ShellSort extends Sorter {
         double temp = array[index1];
         array[index1] = array[index2];
         array[index2] = temp;
-    }
-
-    @Override
-    public double[] getArray() {
-        return array;
-    }
-
-    @Override
-    public void setArray(double[] array) {
-        this.array = array;
     }
 }

@@ -6,7 +6,6 @@ package model;
  */
 public class CombSort extends Sorter {
     private static final double DECREASE = 1.247;
-    private double[] array;
 
     @Override
     public void sort() {
@@ -38,15 +37,5 @@ public class CombSort extends Sorter {
         double temp = array[index1];
         array[index1] = array[index2];
         array[index2] = temp;
-    }
-
-    @Override
-    public double[] getArray() {
-        return array;
-    }
-
-    @Override
-    public void setArray(double[] array) {
-        this.array = array;
     }
 }

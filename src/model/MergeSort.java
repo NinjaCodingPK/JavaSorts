@@ -7,7 +7,6 @@ package model;
  * Created by wookie on 5/2/16.
  */
 public class MergeSort extends Sorter {
-    private double[] array;
 
     @Override
     public void sort(){
@@ -67,15 +66,5 @@ public class MergeSort extends Sorter {
         }
 
         System.arraycopy(resultArray, 0, array, start, resultIndex);
-    }
-
-    @Override
-    public double[] getArray() {
-        return array;
-    }
-
-    @Override
-    public void setArray(double[] array) {
-        this.array = array;
     }
 }
