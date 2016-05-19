@@ -5,7 +5,7 @@ package model;
  * Stable sort algorithm. One of the slowest algorithms. Works good only for small arrays.
  * Created by wookie on 5/5/16.
  */
-public class BubbleSort implements Sorter {
+public class BubbleSort extends Sorter {
     private double[] array;
 
     @Override

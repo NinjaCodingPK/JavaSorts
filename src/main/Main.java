@@ -1,7 +1,6 @@
 package main;
 
-import model.MergeSort;
-import model.QuickSort;
+import model.*;
 import view.View;
 import controller.Controller;
 /**
@@ -10,9 +9,11 @@ import controller.Controller;
 public class Main {
     public static void main(String[] args) {
         View view = new View();
-        QuickSort qSort = new QuickSort();
-        MergeSort mSort = new MergeSort();
-        Controller controller = new Controller(mSort, view);
+        Sorter sort1 = new BubbleSort();
+        Sorter sort2 = new CombSort();
+        //QuickSort qSort = new QuickSort();
+        //MergeSort mSort = new MergeSort();
+        Controller controller = new Controller(sort2, view);
 
         controller.processUser();
     }

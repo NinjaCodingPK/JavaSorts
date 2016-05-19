@@ -5,7 +5,7 @@ package model;
  * Stable sort algorithm. One of the best algorithms for small arrays.
  * Created by wookie on 5/6/16.
  */
-public class InsertionSort implements Sorter {
+public class InsertionSort extends Sorter {
     private double[] array;
 
     @Override

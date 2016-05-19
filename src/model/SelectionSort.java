@@ -6,7 +6,7 @@ package model;
  * Toughness of algorithm don't depends on state of array.
  * Created by wookie on 5/6/16.
  */
-public class SelectionSort implements Sorter {
+public class SelectionSort extends Sorter {
     private double[] array;
 
     @Override

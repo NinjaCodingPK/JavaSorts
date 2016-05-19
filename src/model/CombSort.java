@@ -4,7 +4,7 @@ package model;
  * Java comb sort algorithm realization. Modified bubble sort. Toughness: O(n*log(n)).
  * Created by wookie on 5/10/16.
  */
-public class CombSort implements Sorter {
+public class CombSort extends Sorter {
     private static final double DECREASE = 1.247;
     private double[] array;
 

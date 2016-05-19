@@ -6,7 +6,7 @@ package model;
  * but it don't need additional memory and it works better with "bad" input arrays.
  * Created by wookie on 5/10/16.
  */
-public class ShellSort implements Sorter {
+public class ShellSort extends Sorter {
     private double[] array;
 
     @Override

@@ -6,7 +6,7 @@ package model;
  * If array is revers-sorted toughness of algorithm become equal O(n*n).
  * Created by wookie on 5/2/16.
  */
-public class QuickSort implements Sorter {
+public class QuickSort extends Sorter {
     private double[] array;
 
     @Override

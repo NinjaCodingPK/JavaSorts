@@ -6,7 +6,7 @@ package model;
  * Algorithm works some for already sorted arrays and non-sorted arrays.
  * Created by wookie on 5/2/16.
  */
-public class MergeSort implements Sorter {
+public class MergeSort extends Sorter {
     private double[] array;
 
     @Override

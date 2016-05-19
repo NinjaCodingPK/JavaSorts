@@ -1,24 +1,18 @@
 package model;
 
 /**
- * an interface for sorters classes.
- * Created by wookie on 5/2/16.
+ * Created by wookie on 5/19/16.
  */
-public interface Sorter {
-    /**
-     * Method which start a sort.
-     */
-    public void sort();
+public abstract class Sorter {
+    private double[] array;
 
-    /**
-     * Method should be used after sorting.
-     * @return result array.
-     */
-    public double[] getArray();
+    public abstract void sort();
 
-    /**
-     *
-     * @param array non sorted array.
-     */
-    public void setArray(double[] array);
+    public double[] getArray() {
+        return array;
+    }
+
+    public void setArray(double[] array) {
+        this.array = array;
+    }
 }
